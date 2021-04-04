@@ -5,23 +5,100 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .foto_head {
+      height: 100px;
+      background: darkgoldenrod;
+    }
+    footer a {
+      border-radius: 50%;
+    }
+
+  </style>
 </head>
 <body>
-  <div class="row">
-    <div class="col">Contact Me via Phone</div>
-    <div class="col">Contact Me via Email</div>
-    <div class="col">Download CV</div>
+<!-- Menu -->
+<div class="row text-center" style="padding-top: 5px">
+  <div class="col-sm-2">Contact Me via Phone</div>
+  <div class="col-sm-2">Contact Me via Email</div>
+  <div class="col-sm-2">Download CV</div>
+  <div class="col-sm-4 text-right">
+    Menu
+    <i class="fas fa-bars"></i>
   </div>
-  <div class="row row-cols-2">
-    <div class="col">I am Shahriar</div>
-    <div class="col">Contact Me via Email</div>
-    <div class="col">Web Developer</div>
-  </div>
-<h1>
-  I am Shahriar!
-  </h1>
+</div>
+<!-- End Menu -->
 
+<!-- main Container -->
+<div class="container" style="padding-top: 50px">
+
+  <div class="row ">
+    <div class="col-sm-4">
+      <h1>I am Shahriar</h1>
+    </div>
+
+    <div class="col-sm-8">
+      <div class="foto_head">
+        img
+      </div>
+      <p>
+        Skills
+      </p>
+    </div>
+
+  </div>
+</div>
+<!-- End Main Container -->
+
+<!-- Begin Footer -->
+<footer class="bg-light text-center text-white" style="padding-top: 2em">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a id="facebook" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a id="twitter" class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <!-- Google -->
+      <a id="google" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button">
+        <i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a id="instagram" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a id="linkedin" class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button">
+        <i class="fab fa-linkedin-in"></i></a>
+
+      <!-- Github -->
+      <a id="github" class="btn btn-primary btn-floating m-1"  style="background-color: #333333;"  href="http://www.github.com" role="button">
+        <i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="mailto:sh.farzam@hotmail.com">Shahriar Farzam</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- End Footer -->
+
+</body>
 </html>

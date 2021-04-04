@@ -4,7 +4,9 @@ let links = {
     twitter:    'https://twitter.com/Shahriar1983',
     linkedin:   'https://www.linkedin.com/in/shahriar-farzam',
     instagram:  'https://www.instagram.com/shahriar.farzam/',
-    github :    'https://github.com/shfarzam'
+    github:     'https://github.com/shfarzam',
+    //skype:      'https://join.skype.com/invite/pW1wAhaDK6hq'
+    skype:      'skype:sh.farzam@hotmail.com?chat'
     };
 
 $(window).on('load',function () {

@@ -18,3 +18,34 @@ $(window).on('load',function () {
 
     });
 });
+
+$(document).ready(function(){
+    var latitude;
+    var longitude;
+    var openWeatherMap = 'http://api.openweathermap.org/data/2.5/weather';
+
+    $.get("https://api.ipdata.co?api-key=test", function (response) {
+        latitude  = response.latitude;
+        longitude = response.longitude;
+        $('#city').html(response.city + ", " + response.region);
+        //$("#toast-text").html(JSON.stringify(response, null, 4));
+    }, "jsonp").done(function (){
+
+    $.getJSON(openWeatherMap, {
+        lat: latitude,
+        lon: longitude,
+        units: 'metric',
+        appid: '88c7fb4c2f6f2c1e987a0acc4eab5bc5'
+    }).done(function(weather) {
+        //$('#toast-text').append(weather.main.temp);
+        $('#temp').html('Temp: <b>'+Math.round(weather.main.temp)+'</b>');
+        $('#temp-feels').html('Feels Like: <b>'+Math.round(weather.main.feels_like)+'</b>');
+        $('#temp-max').html('Max Temp: <b>'+Math.round(weather.main.temp_max)+'</b>');
+        $('#temp-min').html('Min Temp: <b>'+Math.round(weather.main.temp_min)+'</b>');
+        $('#weather').html('Weather: <b>'+weather.weather[0].description+'</b>');
+        console.log(weather);
+    });
+    });
+
+    $('.toast').toast('show');
+});

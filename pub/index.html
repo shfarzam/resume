@@ -9,29 +9,36 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/main.js" type="text/javascript"></script>
   <style>
     .card i {
-      color: #dd4b39;
+      color: darkslategray;
+    }
+    h1 {
+      text-align: justify-all;
+      font-family: 'Dosis', sans-serif;
     }
   </style>
 </head>
 <body>
 <!-- Menu -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top bg-light navbar-light">
+<nav class="navbar navbar-inverse sticky-top bg-light navbar-light">
   <div class="container-fluid">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#"><i>Shahriar Farzam</i></a>
-
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <!-- Navbar links -->
+    <h3 class="text-left">Shahriar Farzam</h3>
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><i style="font-size: 2rem;">Shahriar Farzam</i></a>
+
+    <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -46,6 +53,7 @@
     </ul>
   </div>
 
+
   </div>
 </nav>
 
@@ -56,8 +64,24 @@
 
   <div class="row ">
     <div class="col-md-6">
-      <h1 style="margin-top: 1em;margin-left:0.5em;font-size: 4.9rem;line-height: 1.5;font-family: 'Open Sans',sans-serif;">
-        Hi,<br> I'm Shahriar.<br> I am a Creative Web/Software Developer living in Nuremberg, Germany.
+      <br>
+      <div class="toast" style="margin-left: 5%;margin-top: 2%;" data-autohide="false">
+        <div class="toast-header">
+          <strong class="mr-auto text-primary">Welcome</strong>
+          <small class="text-muted">1 mins ago</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body" id="toast-text" style="color: #3b5998;background: lightgrey;">
+          <h2 id="city" ></h2>
+          <h5 id="temp" ></h5>
+          <h5 id="temp-feels" ></h5>
+          <h5 id="temp-max" ></h5>
+          <h5 id="temp-min" ></h5>
+          <h5 id="weather" ></h5>
+        </div>
+      </div>
+      <h1 style="margin-top: 2em;margin-left:0.5em;font-size: 4.9rem;line-height: 1.5;">
+        Hi, I'm Shahriar.<br> I am a Creative Web Developer living in Nuremberg, Germany since 2019.
       </h1>
     </div>
 
@@ -79,7 +103,7 @@
     </div>
 
     <div class="col-md-6 d-flex align-items-center ">
-      <h1 style="font-size: 5rem;line-height: 1.5;font-family: 'Open Sans',sans-serif;">
+      <h1 style="font-size: 5rem;line-height: 1.5;">
         I could <s style="color: lightgray">solve every Problem</s> find the best way to solve the Problems and Developing them.
       </h1>
     </div>
@@ -177,7 +201,7 @@
     </div>
 
     <div class="col-md-6 d-flex align-items-center text-center " style="padding-left: 10%;">
-      <h1 style="font-size: 5rem;line-height: 1.5;font-family: 'Open Sans',sans-serif;" class="d-flex align-items-center text-center">
+      <h1 style="font-size: 5rem;line-height: 1.5;" class="d-flex align-items-center text-center">
         <a class="btn btn-outline-dark btn-lg" href="https://github.com/shfarzam/docker-laravel" style="width: 100%;font-size: 2.2rem" role="button">  See some Sample Projects here...</a>
       </h1>
 
@@ -189,7 +213,7 @@
   <div class="row " id="cv-section">
 
     <div class="col-md-6 d-flex align-items-center ">
-      <h1 style="font-size: 5rem;line-height: 1.5;font-family: 'Open Sans',sans-serif;">
+      <h1 style="font-size: 5rem;line-height: 1.5;">
         Let's download my CV to know me a little bit more...
         <br>
         <a class="btn btn-outline-dark btn-lg text-center" href="files/cv.pdf" style="width: 30%;font-size: 2.2rem" role="button" download="Farzam CV">  Download </a>
@@ -216,8 +240,9 @@
     <div class="col-md-6 d-flex align-items-center text-center " style="width: 100%;">
       <div class="card text-left" style="width: 90%;">
         <div class="card-body">
-          <h3 class="card-title">Contact Information</h3>
-          <p class="card-text"><h5>You could easily try to contact me...</p>
+          <h2 class="card-title">Contact Information</h2>
+          <p class="card-text"><h4>You could easily try to contact me...</h4></p>
+          <h5>
           E-Mail: <a href="mailto:sh.farzam@hotmail.com" class="card-link">sh.farzam@hotmail.com</a>
           <br>
           Phone: <a href="tel:+4917643613808" class="card-link">+49-17643613808</a>
